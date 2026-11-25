@@ -1,0 +1,38 @@
+body {
+  font-family: Arial;
+  margin: 20px;
+}
+
+/* a caixa é a referência para posicionar os links */
+.planta {
+  position: relative;
+  width: 600px;
+}
+
+/* aparência das áreas: texto invisível, a imagem já tem o nome */
+.comodo {
+  position: absolute;
+  box-sizing: border-box;
+  color: transparent;
+}
+
+/* ao passar o mouse, o cômodo ganha cor */
+.comodo:hover {
+  background-color: rgba(255, 230, 0, 0.4);
+}
+
+/* posição de cada cômodo: X = left, Y = top, W = width, H = height */
+.quarto   { left: 20px;  top: 20px;  width: 220px; height: 170px; }
+.banheiro { left: 240px; top: 20px;  width: 120px; height: 170px; }
+.cozinha  { left: 360px; top: 20px;  width: 220px; height: 170px; }
+.sala     { left: 20px;  top: 190px; width: 560px; height: 190px; }
+
+/* as informações começam escondidas */
+.info {
+  display: none;
+}
+
+/* aparece quando o link do mesmo id é clicado */
+.info:target {
+  display: block;
+}

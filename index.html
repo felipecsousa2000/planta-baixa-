@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Planta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Minha Planta Baixa</h1>
+  <p>Clique em um cômodo para ver as informações.</p>
+
+  <!-- caixa que guarda a imagem e as áreas clicáveis -->
+  <div class="planta">
+    <img src="planta.png" width="600">
+
+    <!-- cada link é uma área clicável sobre a imagem -->
+    <a class="comodo quarto" href="#quarto">Quarto</a>
+    <a class="comodo banheiro" href="#banheiro">Banheiro</a>
+    <a class="comodo cozinha" href="#cozinha">Cozinha</a>
+    <a class="comodo sala" href="#sala">Sala</a>
+  </div>
+
+  <!-- o id precisa ser igual ao href do link -->
+  <div class="info" id="quarto">
+    <h2>Quarto</h2>
+    <p>Objetos: cama, guarda-roupa e criado-mudo.</p>
+  </div>
+
+  <div class="info" id="banheiro">
+    <h2>Banheiro</h2>
+    <p>Objetos: vaso, pia e chuveiro.</p>
+  </div>
+
+  <div class="info" id="cozinha">
+    <h2>Cozinha</h2>
+    <p>Objetos: geladeira, fogão, pia e mesa.</p>
+  </div>
+
+  <div class="info" id="sala">
+    <h2>Sala</h2>
+    <p>Objetos: sofá, TV, mesa de centro, mesa de jantar e estante.</p>
+  </div>
+</body>
+</html>
